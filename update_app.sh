@@ -1,14 +1,15 @@
 #!/bin/bash
+#!/bin/bash
 set -e
 
 date
 echo "Updating Python application on VM..."
 
 HOME_DIR=$(eval echo ~$USER)
-APP_DIR="$HOME_DIR/SDA-Chatbot-Project"
-REPO_URL="https://github.com/Mohammed78vr/SDA-Chatbot-Project.git"
-BRANCH="stage-6test"
-GITHUB_TOKEN=$TOKEN  # Passed securely via protectedSettings
+APP_DIR="$HOME_DIR/App"
+REPO_URL="https://github.com/LamaAlkhaldi/App.git"
+BRANCH="main"
+GITHUB_TOKEN= # Passed securely via protectedSettings
 
 # Update code
 if [ -d "$APP_DIR" ]; then
