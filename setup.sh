@@ -6,9 +6,9 @@ echo "Updating Python application on VM..."
 
 HOME_DIR=$(eval echo ~$USER)
 APP_DIR="$HOME_DIR/App"
-REPO_URL="https:/github.com/LamaAlkhaldi/App.git"
-BRANCH="stage-6test"
-GITHUB_TOKEN=$TOKEN  # Passed securely via protectedSettings
+REPO_URL="https://github.com/LamaAlkhaldi/App.git"
+BRANCH="main"
+GITHUB_TOKEN= # Passed securely via protectedSettings
 
 # Update code
 if [ -d "$APP_DIR" ]; then
